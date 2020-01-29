@@ -1,0 +1,15 @@
+h1, h2, h3, h4
+{
+	color: orange;
+	text-align: center;
+}
+
+p, h1, h2, h3, h4
+{
+	font-family:BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif
+}
+
+.flottant
+{
+	float: right;
+}
