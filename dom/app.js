@@ -1,11 +1,5 @@
-const titles = document.getElementsByClassName('title');
+//const bla = document.querySelector('#book-list li:nth-child(2).name');
+//console.log(bla);
 
-console.log(Array.isArray(titles));
-
-// console.log(Array.isArray(Array.from(titles)));
-
-//Array.from(titles).forEach(function(title){
-//  console.log(title);
-// });
-
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray
+var auteurs = document.querySelector('#book-list li.name')
+console.log(auteurs);

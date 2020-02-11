@@ -1,0 +1,43 @@
+#conteneur
+{
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.sexiste
+{
+//  display: flex;
+    background-color: orange;
+}
+
+.raciste
+{
+//  display: flex;
+    background-color: green;
+}
+
+.fin
+{
+//  display: flex;
+    background-color: red;
+}
+
+.politique
+{
+//  display: flex;
+    background-color: gray;
+}
+
+.bete
+{
+//  display: flex;
+    background-color: blue;
+}
+
+.people
+{
+//  display: flex;
+    background-color: maroon;
+}
+
+
