@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Budget</title>
+	<link rel="stylesheet" type="text/css" href="budget.css"/>
+</head>
+<body>
+	<h1 id="theme">Expenses Categories</h1>
+<div class="categorie">
+	<div class="gear">
+		<h2>Gear</h2>
+			<ol>
+				<li class="highTech">MacBookPro 17</li>
+				<li class="highTech">Tablet</li>
+				<li class="hiking">Backpacks </li>
+				<li class="hiking">Hardshells</li>
+				<li class="hiking">Tents</li>
+				<li class="hiking">Hammock</li>
+				<li class="hiking">Batteries</li>
+			</ol>
+			<p>fegwbigrwh6ujsryj</p>
+	</div><!--end gear-->
+	<div class="supplementation">
+		<h2>Nootropics</h2>
+			<p class='supplements'>
+				<ol>
+					<li><a href="https://www.intellimeds.net/pramiracetam/pramiracetam-capsules">Pramiracetam</a></li>
+					<li>Phenylpiracetam</li>
+					<li>Noopept</li>
+					<li>Theine|Caffeine</li>
+					<li>Choline</li>
+					<li>Alpha gpc</li>
+				</ol>
+			</p>
+		<h2>Vitamins</h2>
+			<p class='supplements'>
+				<ol>
+					<li>omega 3</li>
+					<li>multivitamins</li>
+					<li>alcar</li>
+					<li>zinc</li>
+					<li>NAC</li>
+					<li>vitamin D3</li>
+					<li>probitotique</li>
+					<li>ALA</li>
+					<li>Mg/K/Calcium</li>
+					<li>melatonin</li>
+					<li>lion's mane</li>
+				</ol>
+			</p>
+		<h2>Proteins</h2>
+			<p class='supplements'>
+				<ol>
+					<li>Whey</li>
+					<li>BCAA</li>
+					<li>Glutamin</li>
+				</ol>
+			</p>
+	</div><!--end supplementation-->
+	<div class="landing">
+		<h2>Flight Ticket</h2>
+			<p>fegwbigrwh6ujsryj</p>
+		<h2>Self-Storage</h2>
+	</div><!--end landing-->
+	<div class="supermarket">
+		<h2>Hygiene</h2>
+			<ul> 
+				<li>Laundry</li>
+				<li>Soap</li>
+				<li>Lingettes</li>
+				<li>Dentifrice</li>
+				<li>Deo</li>
+				<li>Febreze</li>
+				<li>Tea tree</li>
+				<li>Coton-tiges</li>
+			</ul>
+		<h2>Food</h2>
+			<ul>
+				<li>Pates</li>
+				<li>Sel fume</li>
+				<li>shiitake</li>
+				<li>Huile d'Olive et de Colza</li>
+				<li>Piments</li>
+			</ul>
+	</div><!--end supermarket-->
+	<div class="pass">
+		<h2>Bus pass</h2>
+			<p>fegwbigrwh6ujsryj</p>
+		<h2>Gym pass</h2>
+		<h2>Internet</h2>
+	</div><!--end pass-->
+	<div class="misc">
+		<h2>Additional spendings</h2>
+			<ol>
+				<li class="monthlyFees1">Laundry</li>
+				<li class="monthlyFees1"> Bank</li>
+				<li class="monthlyFees1">YouTube</li>
+			</ol>
+	</div><!--misc-->
+</div><!--end categorie-->
+<script>
+
+var b = document.body;
+
+var div = b.childNodes[10];
+
+var p1= div.childNodes[1];
+
+var texte = p1.childNodes[0].nodeValue;
+
+alert(texte);
+
+</script>
+</body>
+</html>
+
+<!-- Travail sur le DOM via 17/02 COURS COMPLET JAVASCRIPT [33/65] - Accéder à des éléments HTML en JavaScript https://www.youtube.com/watch?v=trO063YQbCs -->
+
+<!--
+	var titre_page = document.title ;
+	var page = document.body;
+	var lien = document.links;
+	alert('Contenu de titre_page : ' + ' '+ titre_page +
+		'\nContenu de page : ' + ' ' + page +
+		'\nContenu de page : ' + ' ' + lien);
+-->
+
+
+<!-- COURS COMPLET JAVASCRIPT [34/65] le 17/02 l'apres-midi bibliotheque centrale de Dublin
+
+var theme = document.getElementById('theme');
+
+var texte_theme = theme.innerHTML
+
+var textePara = document.querySelector('.supplements').textContent;
+
+alert('Theme :' + ' ' + texte_theme +
+	'\nParagraphe 1 :' + ' ' + textePara) ;
+
+	document.getElementById('theme').innerHTML = '<mark> Kagoshima Expenses Types </mark>';
+
+	document.querySelector('a').href = 'http://wikipedia.org';
+
+	document.querySelector('.supermarket').className = 'groceries';
+
+	document.getElementById('theme').style.color = 'lightblue';
+	document.getElementById('theme').style.backgroundColor = 'blue';
+	document.getElementById('theme').style.fontSize = '40px';
+-->
+
+<!-- COURS COMPLET JAVASCRIPT [35/65] le 17/02 l'apres-midi 
+	creation d'objet HTML via Javascript
+
+J'ai reussi ajouter du texte a lin fin mais pas a un endroit precis 
+	var synonyms = document.createElement('p');
+synonyms.id = 'nouveau';
+
+var contenu = document.createTextNode('smart drugs or cognitive ehancers');
+
+synonyms.appendChild(contenu);
+
+var para1 = document.querySelector('.supplements');
+
+document.body.insertBefore(synonyms, para1);
+-->
+
+<!-- COURS COMPLET JAVASCRIPT [36/65] le 17/02 l'apres-midi 
+	creation d'objet HTML via Javascript
+
+suppression d'elements
+
+var titre = document.getElementById('theme');
+var parent = document.body;
+parent.removeChild(titre);
+
+remplacement de titres :
+
+var titre = document.getElementById('theme');
+var parent = document.body;
+
+var nouveauTitre = document.createElement('h2');
+nouveauTitre.id = 'titre_moyen';
+nouveauTitre.innerHTML = 'Categories des Depenses';
+
+parent.replaceChild(nouveauTitre, titre);
+
+-->
+
+<!-- COURS COMPLET JAVASCRIPT [37/65] le 17/02 l'apres-midi 
+	creation d'objet HTML via Javascript
+
+var p = document.querySelector('.supplements');
+var div = p.parentNode ;
+
+div.style.backgroundColor = 'orange';

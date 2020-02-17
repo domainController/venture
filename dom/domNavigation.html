@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Budget App </title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1 id='gros titre'> Le DOM </h1>
+    <div>
+    	<p class='para'>Du texte</p>
+    	<p class='para'>Un deuxieme paragraphe</p>
+    </div>
+
+
+    <script>
+    	
+var p2 = document.querySelectorAll('.para')[1];
+
+var premier = p2.firstChild;
+var dernier = p2.lastChild;
+
+var inner1 = premier.nodeValue ;
+var inner2 = dernier.childNodes[0].nodeValue;
+
+alert('Contenu du premier enfant: ' + inner1 +
+	'\nContenu du dernier enfant : ' + inner2);
+
+    </script>
+
+  </body>
+</html>
+
+<!-- COURS COMPLET JAVASCRIPT [37/65] le 17/02 l'apres-midi 
+	creation d'objet HTML via Javascript
+
+var b = document.body;
+
+var div = b.childNodes[3];
+
+var p1= div.childNodes[1];
+
+var texte = p1.childNodes[0].nodeValue;
+
+alert(texte);
+-->
