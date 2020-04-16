@@ -1,0 +1,24 @@
+<!-- Apprendre le JavaScript : Chapitre 6, Les Fonctions 
+https://www.youtube.com/watch?v=pggJ5s6sTpk -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fonctions</title>
+</head>
+<body>
+<script>
+	// Test nombre premier
+
+var estPremier = function (nombre) {
+    for (var x=2; x < nombre; x++){
+        if (nombre % x === 0) {
+            return false
+        }
+    }
+    return true
+}
+
+estPremier();
+</script>
+</body>
+</html>

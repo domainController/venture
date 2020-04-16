@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>closures</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h1> Les  closures</h1>
+
+		<script type="text/javascript">
+			function compteur(){
+				var i = 0;
+				return function(){
+					return i++
+				}
+			}
+
+			alert(compteur());
+		</script>
+	</body>
+</html>
