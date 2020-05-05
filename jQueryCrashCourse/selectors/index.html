@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rebooted </title>
+    <script src="./jquery-3.5.1.js"></script>   </script>
+    <style>
+        body{
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+            line-height: 1,5em;
+        }
+        header{
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px #000 solid;
+            margin-bottom: 10px;
+        }
+        #container{
+            width: 90%;
+            margin: auto;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Manifesto  </h1>
+    </header>
+    <div id="container">
+        <h1 id="heading1">Hook</h1>
+            <p id="para1">
+                En fait cette chaine est une fenêtre. Et cette fenêtre va tenter de nous montrer comment 
+                survivre en tant que SDF <span> itinérant</span> dans les grandes villes européennes et tendre vers un quotidien vivable. Disons Notamment.
+            
+                Mise au point:
+                On va avoir besoin de définir quelques concepts sur lesquels vont reposer rebooted
+            </p>
+
+        <h1 class="heading2">SDF</h1>
+            <p class="para2">
+                Déjà j’aimerais faire la lumière dans ma novlangue et 
+                distinguer 3 types de mentalités qui recouvrent leurs états d'âmes
+
+                Celui qui a abandonné, Et qu’a Pas particulièrement envie de se réintégrer,
+                Et qui se laisse dériver surtout. Typiquement c’est le <span> Clochard </span> . 
+            </p>
+        <ul id="list">
+            <li>Clochard</li>
+            <li>Spectateur désintéressé</li>
+            <li>Vagabond ambitieux</li>
+        </ul>
+    </div>
+
+    <input type="button" value="Dort dehors">
+    <input type="submit" value="Dort dans son Véhicule">
+    <input type="text">
+
+    <script>
+//     $('h1#heading1').hide();
+//    $('h1.heading2').hide();
+//     $('p span').css('color', 'red');
+        $('ul#list li:first').css('color', 'red');
+    </script>
+</body>
+</html>
