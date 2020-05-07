@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>39/65</title>
-</head>
-<body>
-	<h1 id='gros titre'>Les evenements</h1>
-	<p>Cliquez-moi !</p>
-	<p>Serait-ce de la programmation <strong>Evenementielle </strong>?</p>
-	<a href="#" name="button1" onclick="dataLayer.push({'event': 'button1-click'});" >Button 1</a>
-	
-	<script>
+  <head>
+    <title>39/65</title>
+  </head>
+  <body>
+    <h1 id="gros titre">Les evenements</h1>
+    <p>Cliquez-moi !</p>
+    <p>Serait-ce de la programmation <strong>Evenementielle </strong>?</p>
+    <a
+      href="#"
+      name="button1"
+      onclick="dataLayer.push({'event': 'button1-click'});"
+      >Button 1</a
+    >
 
-		var p1 = document.querySelector('p');
-		
-		p1.addEventListener('click', displayName);
-		p1.addEventListener('click', displayType);
+    <script>
+      var p1 = document.querySelector('p');
 
-		function displayName(){
-			alert('JavaScript');
-		}
+      p1.addEventListener('click', displayName);
+      p1.addEventListener('click', displayType);
 
-		function displayType(){
-			alert('Asynchrone');
-		}
+      function displayName() {
+        alert('JavaScript');
+      }
 
-	</script>
-</body>
+      function displayType() {
+        alert('Asynchrone');
+      }
+    </script>
+  </body>
 </html>

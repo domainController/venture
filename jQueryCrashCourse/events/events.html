@@ -1,45 +1,57 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Rebooted </title>
-    <script src="../jquery-3.4.1.js"></script>   </script>
+  <head>
+    <title>Rebooted</title>
+    <script src="../jquery-3.4.1.js"></script>
     <style>
-        body{
-            font-size: 17px;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f4f4f4;
-            line-height: 1,5em;
-        }
-        header{
-            background: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 4px #000 solid;
-            margin-bottom: 10px;
-        }
-        #container{
-            width: 90%;
-            margin: auto;
-            padding: 10px;
-        }
+      body {
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f4f4f4;
+        line-height: 1, 5em;
+      }
+      header {
+        background: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 4px #000 solid;
+        margin-bottom: 10px;
+      }
+      #container {
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-       <h1>Manifesto</h1>         
+      <h1>Manifesto</h1>
     </header>
     <div id="container">
-        <h3>Mouse Events</h3>
-        <button id="btn1">Button1</button>
-        <button id="btn2">Button2</button>
+      <h3>Mouse Events</h3>
+      <button id="btn1">dblclick 2 toggle</button>
+      <button id="btn2">hover 2 toggle</button>
+      <p class="para1">
+        En fait cette chaine est une fenêtre. Et cette fenêtre va tenter de nous
+        montrer comment survivre en tant que SDF <span> itinérant</span> dans
+        les grandes villes européennes et tendre vers un quotidien vivable.
+        Disons Notamment. Mise au point: On va avoir besoin de définir quelques
+        concepts sur lesquels vont reposer rebooted
+      </p>
     </div>
 
     <script>
-        $('#btn1').click(function(){
-            alert('Button Clicked!');
+      $(document).ready(function () {
+        $('#btn1').dblclick(function () {
+          $('.para1').toggle();
         });
-    </script>
-</body>
-</html>
 
+        $('#btn2').hover(function () {
+          $('.para1').toggle();
+        });
+      });
+    </script>
+  </body>
+</html>
