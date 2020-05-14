@@ -1,11 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   background-color: #f4f4f4;
-  color: white;
+  color: rgb(218, 106, 106);
 
   font-family: Verdana, Geneva, sans-serif;
   font-size: 12px;
@@ -28,5 +23,59 @@ body {
   border-bottom-width: 2px;
   border-top-style: double;
 
-  padding-top: 20px;
+  padding: 49px;
+  margin: 20px 0;
+}
+
+.profile h1 {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  text-decoration: unset;
+  text-transform: uppercase;
+}
+
+.passion {
+  border: 3px dotted#ccc;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.categories {
+  border: 1px #ccc solid;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.categories h2 {
+  text-align: center;
+}
+
+.categories ul {
+  padding: 0;
+  padding-left: 20px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: orangered;
+}
+
+a:active {
+  color: green;
+}
+
+a:visited {
+  color: grey;
+}
+
+.categories li {
+  padding-bottom: 8px;
+  border-bottom: dotted 1px #333;
+  list-style-image: url('../../images/check.png');
 }
