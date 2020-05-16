@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      .wrapper {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        /*column-gap: 1em;
+        row-gap: 2px; */
+        gap: 1em;
+      }
+      .wrapper > div {
+        background: #eee;
+        padding: 1em;
+      }
+      .wrapper > div:nth-last-child(odd) {
+        background: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia veniam quo
+        quis dicta magnam deleniti tempore quos eveniet libero amet sapiente
+        enim deserunt accusamus dolorem nesciunt aut fuga vero, ex esse facilis
+        voluptates, earum distinctio commodi aspernatur? Adipisci, officiis aut
+        ea qui quibusdam iure beatae ullam consequuntur, doloremque sit
+        molestiae tempore. Modi architecto libero quas doloribus alias
+        cupiditate? Dignissimos sapiente praesentium recusandae, eum unde fuga
+        ratione, laudantium et, illum accusamus nulla. Quasi qui laboriosam quod
+        minima laborum illo ea sequi.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur ea
+        saepe assumenda fugit, similique laboriosam cumque, ab sed officiis
+        voluptatem commodi quas autem ullam ratione rem culpa praesentium eos
+        quaerat?
+      </div>
+    </div>
+    <div class="wrapper">
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia veniam quo
+        quis dicta magnam deleniti tempore quos eveniet libero amet sapiente
+        enim deserunt accusamus dolorem nesciunt aut fuga vero, ex esse facilis
+        voluptates, earum distinctio commodi aspernatur? Adipisci, officiis aut
+        ea qui quibusdam iure beatae ullam consequuntur, doloremque sit
+        molestiae tempore. Modi architecto libero quas doloribus alias
+        cupiditate? Dignissimos sapiente praesentium recusandae, eum unde fuga
+        ratione, laudantium et, illum accusamus nulla. Quasi qui laboriosam quod
+        minima laborum illo ea sequi.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur ea
+        saepe assumenda fugit, similique laboriosam cumque, ab sed officiis
+        voluptatem commodi quas autem ullam ratione rem culpa praesentium eos
+        quaerat?
+      </div>
+    </div>
+  </body>
+</html>
