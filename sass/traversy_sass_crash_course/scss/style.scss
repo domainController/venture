@@ -1,6 +1,5 @@
-$font-stack: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-
-$light-color: #f4f4f4;
+@import 'config';
+@import 'utilities';
 
 * {
   box-sizing: border-box;
@@ -12,4 +11,59 @@ body {
   background-color: $light-color;
   font-family: $font-stack;
   line-height: 1.6;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.showcase {
+  background-color: $primary-color;
+  color: #fff;
+  height: 600px;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      list-style-type: none;
+    }
+
+    li {
+      padding: 15px;
+    }
+    a:hover {
+      color: $secondary-color;
+    }
+  }
+
+  a {
+    color: #fff;
+  }
+  .showcase-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+    img {
+      width: 50%;
+    }
+
+    h1 {
+      font-size: 50px;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 20px 0;
+    }
+  }
 }
